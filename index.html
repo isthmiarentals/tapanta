@@ -4,28 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TAPANTA.GR | Premium Greek Domain</title>
+<title>TAPANTA.GR | Premium Greek Domain Name</title>
 
-<meta name="description" content="TAPANTA.GR - Premium Greek domain name διαθέσιμο προς εξαγορά. Ιδανικό για marketplace, portal, startup, AI platform ή business directory.">
-<meta name="keywords" content="tapanta.gr, premium domain, domain for sale, ελληνικό domain, marketplace">
+<meta name="description" content="Το TAPANTA.GR είναι ένα premium ελληνικό domain διαθέσιμο προς εξαγορά. Ιδανικό για marketplace, startup, portal, directory ή AI platform.">
+<meta name="keywords" content="tapanta.gr, domain for sale, premium domain, marketplace, startup, directory">
 <meta name="robots" content="index,follow">
 <meta name="author" content="TAPANTA.GR">
 
-<meta property="og:title" content="TAPANTA.GR">
-<meta property="og:description" content="Premium Greek Domain Available">
+<meta property="og:title" content="TAPANTA.GR | Premium Greek Domain">
+<meta property="og:description" content="Premium Greek Domain Available For Acquisition">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tapanta.gr">
 <meta property="og:site_name" content="TAPANTA.GR">
 
 <link rel="canonical" href="https://tapanta.gr/">
 
-https://fonts.googleapis.com
-https://fonts.gstatic.com
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <!-- Google Analytics -->
-<script async src="https://www.googletag?id=G-LS39RPHF67script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LS39RPHF67"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -34,6 +34,14 @@ gtag('config', 'G-LS39RPHF67');
 </script>
 
 <style>
+
+:root{
+--primary:#2563eb;
+--secondary:#38bdf8;
+--bg:#0f172a;
+--card:#1e293b;
+--text:#e2e8f0;
+}
 
 *{
 margin:0;
@@ -47,8 +55,8 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Inter',sans-serif;
-background:#0f172a;
-color:#fff;
+background:var(--bg);
+color:white;
 line-height:1.7;
 }
 
@@ -66,10 +74,19 @@ justify-content:center;
 text-align:center;
 padding:60px 20px;
 background:
-linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.9)),
-url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80');
+linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.92)),
+url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
+}
+
+.badge{
+display:inline-block;
+padding:10px 18px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:999px;
+color:var(--secondary);
+margin-bottom:25px;
 }
 
 .hero h1{
@@ -79,19 +96,18 @@ letter-spacing:2px;
 margin-bottom:15px;
 }
 
-.hero p{
-max-width:800px;
-margin:auto;
+.hero h2{
+font-size:1.4rem;
+font-weight:400;
+margin-bottom:25px;
 color:#cbd5e1;
 }
 
-.badge{
-display:inline-block;
-padding:10px 22px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:999px;
-color:#38bdf8;
-margin-bottom:20px;
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:1.1rem;
+color:#cbd5e1;
 }
 
 .buttons{
@@ -100,22 +116,22 @@ margin-top:35px;
 
 .btn{
 display:inline-block;
-padding:15px 30px;
-margin:8px;
+padding:16px 32px;
 border-radius:999px;
 text-decoration:none;
 font-weight:700;
 transition:.3s;
+margin:5px;
 }
 
 .btn-primary{
-background:#2563eb;
-color:#fff;
+background:var(--primary);
+color:white;
 }
 
 .btn-secondary{
-border:1px solid rgba(255,255,255,.25);
-color:#fff;
+border:1px solid rgba(255,255,255,.2);
+color:white;
 }
 
 .btn:hover{
@@ -127,19 +143,37 @@ padding:90px 0;
 }
 
 .section-title{
-text-align:center;
 font-size:2.5rem;
+text-align:center;
 margin-bottom:50px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat{
+padding:30px;
+background:var(--card);
+border-radius:20px;
+text-align:center;
+}
+
+.stat h3{
+font-size:2rem;
+color:var(--secondary);
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
 .card{
-background:#1e293b;
+background:var(--card);
 padding:30px;
 border-radius:20px;
 transition:.3s;
@@ -157,24 +191,6 @@ margin-bottom:10px;
 color:#cbd5e1;
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.stat{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.stat h3{
-font-size:2rem;
-color:#38bdf8;
-}
-
 .sale{
 background:linear-gradient(135deg,#0ea5e9,#2563eb);
 padding:60px;
@@ -183,11 +199,20 @@ text-align:center;
 }
 
 .sale h2{
-font-size:2.5rem;
-margin-bottom:15px;
+font-size:2.4rem;
+margin-bottom:20px;
 }
 
-.contact{
+.sale ul{
+list-style:none;
+margin-top:25px;
+}
+
+.sale li{
+margin:10px 0;
+}
+
+form{
 max-width:700px;
 margin:auto;
 }
@@ -212,7 +237,7 @@ width:100%;
 padding:16px;
 border:none;
 border-radius:12px;
-background:#2563eb;
+background:var(--primary);
 color:white;
 font-size:1rem;
 font-weight:700;
@@ -221,16 +246,16 @@ cursor:pointer;
 
 footer{
 padding:40px;
-border-top:1px solid rgba(255,255,255,.08);
 text-align:center;
 color:#94a3b8;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 .fade{
-animation:fadeIn 1.2s ease;
+animation:fadein 1.2s ease;
 }
 
-@keyframes fadeIn{
+@keyframes fadein{
 from{
 opacity:0;
 transform:translateY(25px);
@@ -243,209 +268,20 @@ transform:translateY(0);
 
 </style>
 </head>
-
 <body>
 
 <section class="hero">
+
 <div class="container fade">
 
 <div class="badge">
-Premium Greek Domain Available
+PREMIUM GREEK DOMAIN AVAILABLE
 </div>
 
 <h1>TAPANTA.GR</h1>
 
-<p style="font-size:1.4rem;margin-bottom:20px;">
-Τα πάντα. Σε ένα μέρος.
-</p>
+<h2>Τα πάντα. Σε ένα μέρος.</h2>
 
 <p>
-Ένα μοναδικό ελληνικό domain με ισχυρή εμπορική ταυτότητα,
-εύκολο στην απομνημόνευση και ιδανικό για την ανάπτυξη
-ενός μεγάλου ψηφιακού brand.
-</p>
-
-<p style="margin-top:20px;">
-A premium one-word Greek domain name suitable for a marketplace,
-startup, AI platform, directory, classifieds website or media portal.
-</p>
-
-<div class="buttons">
-
-#contact
-Εκδήλωση Ενδιαφέροντος
-</a>
-
-#opportunities
-Learn More
-</a>
-
-</div>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2 class="section-title">
-Domain Highlights
-</h2>
-
-<div class="stats">
-
-<div class="stat">
-<h3>1</h3>
-<p>Μονολεκτικό Domain</p>
-</div>
-
-<div class="stat">
-<h3>.GR</h3>
-<p>Greek Premium Extension</p>
-</div>
-
-<div class="stat">
-<h3>∞</h3>
-<p>Business Opportunities</p>
-</div>
-
-<div class="stat">
-<h3>100%</h3>
-<p>Brandable</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section id="opportunities">
-<div class="container">
-
-<h2 class="section-title">
-Πιθανές Χρήσεις
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🛒 Marketplace</h3>
-<p>Ηλεκτρονικές αγορές και σύγκριση προϊόντων.</p>
-</div>
-
-<div class="card">
-<h3>📢 Classifieds</h3>
-<p>Αγγελίες ακινήτων, εργασίας και υπηρεσιών.</p>
-</div>
-
-<div class="card">
-<h3>🏢 Business Directory</h3>
-<p>Επιχειρηματικός οδηγός πανελλαδικής εμβέλειας.</p>
-</div>
-
-<div class="card">
-<h3>🤖 AI Platform</h3>
-<p>Κατάλογος εργαλείων τεχνητής νοημοσύνης.</p>
-</div>
-
-<div class="card">
-<h3>📰 Media Portal</h3>
-<p>Ισχυρό όνομα για ειδησεογραφικό ή θεματικό portal.</p>
-</div>
-
-<div class="card">
-<h3>🚀 Startup Brand</h3>
-<p>Σύντομο όνομα με υψηλή εμπορική αξία.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<div class="sale">
-
-<h2>
-Premium Domain For Acquisition
-</h2>
-
-<p>
-Το TAPANTA.GR είναι διαθέσιμο για εξαγορά από επενδυτές,
-εταιρείες και οργανισμούς που αναζητούν ένα ισχυρό ελληνικό brand.
-</p>
-
-<br>
-
-<p>
-✅ Premium .GR Domain<br>
-✅ Short & Memorable<br>
-✅ High Branding Potential<br>
-✅ Startup Ready<br>
-✅ Marketplace Ready<br>
-✅ Easy To Remember
-</p>
-
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-
-<h2 class="section-title">
-Εκδήλωση Ενδιαφέροντος
-</h2>
-
-<div class="contact">
-
-https://formsubmit.co/rideyou113@gmail.com
-
-<input type="hidden" name="_subject" value="Interest for TAPANTA.GR">
-
-<input
-type="text"
-name="name"
-placeholder="Ονοματεπώνυμο"
-required>
-
-<input
-type="email"
-name="email"
-placeholder="Email"
-required>
-
-<textarea
-name="message"
-placeholder="Παρακαλούμε περιγράψτε το ενδιαφέρον σας για το TAPANTA.GR"></textarea>
-
-<button type="submit">
-Αποστολή
-</button>
-
-</form>
-
-</div>
-
-</div>
-</section>
-
-<footer>
-
-<strong>TAPANTA.GR</strong>
-
-<br><br>
-
-Premium Greek Domain Name
-
-<br><br>
-
-Available for acquisition
-
-</footer>
-
-</body>
-</html>
+Το TAPANTA.GR είναι ένα ισχυρό και εύκολα αναγνωρίσιμο ελληνικό domain,
+ιδανικό για Marketplace, Business Directory, AI Platform,
